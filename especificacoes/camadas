@@ -1,0 +1,50 @@
+sobre as camadas
+----------------
+
+o jogo eh dividido em camadas, cada qual responsavel por
+um grupo especifico de funcionalidades
+
+camadas basicas
+---------------
+
+- interface (built-in - clientes)
+  - renderizacao
+    - abertura
+    - menu principal
+    - jogo
+    - finalizacao
+
+- som (modulo?)
+  - musica ambiente
+  - efeitos de acoes
+  - conversa entre usuarios (link com camada de redes.chat)
+
+- rede (modulo?)
+  - troca de pacotes
+    - cliente/servidor
+      (rota: permite que se encaminhe para um outro cliente)
+  - chat
+    - privado/publico
+  - conversa (voz)
+    - pacotes udp
+
+- logica (seria um controlador?)
+  - gerenciamento de clientes que se conectam
+    - aceita/bani jogadores
+    - define numero maximo de jogadores
+  - troca de contexto (telas do jogo: ativa o renderizador,
+        podendo este ser dividido em video/audio/acoes)
+  - processamento das jogadas
+    - jogadas permitidas/nao-permitidas
+    - controle do status de cada jogador
+    - broadcast do status para todos os jogadores
+    - controle de quem joga
+      - inicio/fim das jogadas
+    - controle do status de cada jogador
+
+
+
+
+
+
+
